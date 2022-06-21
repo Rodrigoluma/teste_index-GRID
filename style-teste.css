@@ -1,0 +1,383 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: linear-gradient(white 10%, #07A0C3,white);
+}  
+/*DIVISÃO DA PÁG INICIAL*/
+.pag-inicial {
+display: grid;
+grid-template-columns: 55% 1fr;
+grid-template-rows: 15vh 85vh;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+/*HEADER*/
+
+.logo-header{
+    position: absolute;
+    height: 15vh;
+    width: 24vw;
+}
+.grid-template-1 .fundo-header1{
+    height: 15vh;
+    width: 38vw;
+    z-index: 0;
+    margin-left: 24vw;
+    position: absolute;
+}
+.fundo-header2{
+    height: 15vh;
+    width: 38vw;
+    z-index: 0;
+    margin-left: 62vw;
+    position: absolute;
+}
+.grid-template-2{
+    margin-top: 5vh;
+    
+    z-index: 3;
+    position: relative;
+}
+.grid-template-2 nav ul{
+    display: flex;
+    
+}
+.grid-template-2 nav ul li {
+    list-style: none;
+    
+}
+.grid-template-2 nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 2vw;
+    transition: all 250ms linear 0s;
+}
+.grid-template-2 nav ul li a:hover {
+    background: rgba(255,255,255,0.15);
+}
+#checkbox-menu{
+    display:none
+}
+
+
+    
+
+/*TEXTO*/
+.grid-template-3{
+    margin-top: 10%;
+    text-align: center;
+    margin-left: 12%;
+    line-height: 25px;
+    line: ;
+    
+}
+#paragrafo-brasil{
+    text-align: left;
+    font-size: 22px;
+    
+}
+/*VÍDEO*/
+.grid-template-4{
+    justify-content: center;
+    margin-top: 15%;
+    text-align: center;
+}
+#video{
+    
+    width: 70%;
+    height: 60%;
+
+}
+.belezas{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/*----------------------CARDS-------------------*/
+.cards{
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: left;
+    line-height: 30px;
+    margin-right: 7%;
+    margin-left: 7%;
+    justify-content: space-around;
+    
+   
+    }
+    .cards h2{
+        text-align: center;
+        margin-top: 3%;
+    }
+.card{
+    height: 70vh;
+    background-color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 3%;
+}
+
+.foto-card{
+    width: 90%;
+    height: 50%;
+    margin-left: 5%;
+}
+.texto-card{
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+/*-------------------------------PONTOS TURÍSTICOS----------------------------------*/
+.texto-pontos{
+    text-align: center;
+    margin-top: 25vh;
+    margin-bottom: 15vh;
+    font-size: 36px;
+}
+.pontos-turisticos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-right: 7%;
+    margin-left: 7%;
+    justify-content: space-between;
+}
+.pontos-turisticos h2{
+    text-align: center;
+    margin-top: 3%;
+}
+.card-pontos{
+font-size: 18px;
+border-radius: 3%;
+text-align: center;
+}
+
+.img-pontos{
+width: 60%;
+height: 60%;
+border-radius: 50%;
+
+}
+.img-pontos:hover {
+    transition: 0.5s;
+    transform: translateY(-9px);
+}
+
+
+
+
+
+/*--------------------------FOOTER------------------------*/
+
+/*não tenho ideia do porque o.pag-inicial está ainda aí, só sei que se tirar as img do footer param de funcionar*/
+footer #copyright{
+    .pag-inicial {
+        display: grid;
+        grid-template-columns: 24vw 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        
+    }
+    text-align: center;
+    
+    font-size: 1.5em;
+}
+#copyright{
+    justify-content: space-around;
+    margin-right:5vw;
+    
+}
+.logo-footer{
+    position: absolute;
+    height: 15vh;
+    width: 24vw;
+    margin-left: 0;
+}
+#copyright .fundo-footer1{
+    height: 15vh;
+    width: 38vw;
+    z-index: 0;
+    margin-left: 24vw;
+    position: absolute;
+}
+#copyright .fundo-footer2{
+    height: 15vh;
+    width: 38vw;
+    z-index: 0;
+    margin-left: 62vw;
+    position: absolute;
+}
+.texto-footer{
+    z-index: 1;
+    position: relative;
+    margin-bottom: 5vh;
+    text-align: right;
+    
+}
+
+@media (max-width: 630px) {
+
+    /*----------------------------------- HEADER -----------------------------------------*/
+    .menu-button-container {
+        display: flex
+    }
+
+    .menu {
+        position: absolute;
+        left: 0;
+        top: 15vh;
+        flex-direction: column;
+        width: 25vw;
+        justify-content: center;
+        align-items: center;
+        transform: scaleX(0);
+        z-index: 3;
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        color: white;
+        background-color: #44bde7;
+        border-radius: 5px;
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid white;
+    }
+
+    .menu li a {
+        flex: 1;
+        text-align: center;
+    }
+
+    main .container-menu img {
+        display: none;
+    }
+
+    .container-menu {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    #header label {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+    }
+
+    label span {
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        background: white;
+        border-radius: 30px;
+        transition: 0.25s ease-in-out;
+    }
+
+    label span:nth-child(1) {
+        top: 0;
+    }
+
+    label span:nth-child(2) {
+        top: 8px;
+    }
+
+    label span:nth-child(3) {
+        top: 16px;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 8px
+    }
+
+    #checkbox-menu:checked+label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #checkbox-menu:checked+label span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 8px
+    }
+
+    nav.menu {
+        width: 100%;
+    }
+
+    #checkbox-menu:checked~nav .menu {
+        transform: scaleX(1);
+        transform-origin: right;
+        transition: transform 0.5s ease;
+    }
+}
+
+
+
+
+
+
+
+
+/*grid-template-areas: 
+"logo-header container-menu"
+"video texto-brasil"
+;/*
+} 
+
+
+/*.header{
+    display: grid;
+    
+    grid-area: 1 / 1 / span 2 / span 1;
+}*/
+/*
+.logo-header{
+    background-color: aqua;
+    border: 3px solid black;
+    grid-c
+    
+}
+
+.container-menu{
+    
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: aqua;
+    border: 3px solid black;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    border: 3px solid black;
+    grid-area: 2 / 1 / 3 / 2;
+    
+}
+.texto-brasil{
+    
+    
+    grid-area: 2 / 2 / 3 / 3;
+}*/
